@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head style="color: darkgreen;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Huerto Orgánico</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body style="background-color: rgb(167, 226, 170);">
+
+    
+
+
+<div class="menu">
+    <div class="logo">
+        <img href="logo.png" alt="Logo de la empresa">
+        
+    </div>
+    <ul class="lista">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        
+        
+    </ul>
+</div>
+
+
+<div class="formulario">
+    <h1>Productos del Huerto Orgánico</h1>
+    <link rel="stylesheet" href="estilos.css">
+    <form action="procesar_formulario.php" method="POST">
+        <label for="producto">Producto:</label>
+        <select name="producto" id="producto">
+            <option value="tomate">Tomate</option>
+            <option value="cebolla">Cebolla</option>
+            <option value="pimiento">Pimiento</option>
+            <option value="paiteña">Paiteña</option>
+            <option value="zanahoria">Zanahoria</option>
+            <option value="alverja">Alverja</option>
+            <option value="nabo">Nabo</option>
+            <option value="pepinillo">Pepinillo</option>
+            <option value="lechuga">Lechuga</option>
+        </select>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+        <button type="submit">Agregar al carrito</button>
+        <padding: 50px;></padding:>
+    </form>
+</div>
+
+</body>
+</html>
