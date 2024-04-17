@@ -1,35 +1,77 @@
-div.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #b88909;
-    padding: 50px;
+/* Estilos generales */
+body {
+    background-color: rgb(167, 226, 170);
+    margin: 0;
+    padding: 0;
+    color: darkgreen;
 }
 
-ul.lista {
-
-    list-style: none;
-    margin: 20;
-    padding: 10px;
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.menu-lista li {
-    border: 10px solid #c70841;
-    display: inline;
-    margin-left: 20px;
+.menu {
+    background-color: #fff; /* Color de fondo del menú */
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-div.logo img {
-    height: 50px; 
+.menu-item {
+    display: inline-block;
+    color: darkgreen; /* Color de texto de los enlaces del menú */
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 10px;
 }
 
-.formulario {
+.menu-item:hover {
+    background-color: #ccc; /* Color de fondo al pasar el ratón sobre los enlaces */
+}
+
+.cabecera {
+    text-align: center;
     margin-top: 20px;
 }
 
-.formulario label, .formulario input, .formulario select, .formulario button {
-    display: block;
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.productos h2 {
     margin-bottom: 10px;
-    border: 20px solid #70077e;
+}
+
+.huerto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.huerto .imagen {
+    margin: 10px;
+    text-align: center;
+}
+
+.huerto .imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+.huerto .imagen h2 {
+    margin-top: 10px;
+}
+
+.huerto .imagen p {
+    color: #555;
 }
