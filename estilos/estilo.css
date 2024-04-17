@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     background-color: rgb(167, 226, 170);
     margin: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 .menu {
-    background-color: #fff; /* Color de fondo del menú */
+    background-color: #fff; 
     padding: 10px 0;
     text-align: center;
     margin-bottom: 20px;
@@ -21,14 +21,14 @@ body {
 
 .menu-item {
     display: inline-block;
-    color: darkgreen; /* Color de texto de los enlaces del menú */
+    color: darkgreen; 
     text-decoration: none;
     padding: 5px 10px;
     margin: 0 10px;
 }
 
 .menu-item:hover {
-    background-color: #ccc; /* Color de fondo al pasar el ratón sobre los enlaces */
+    background-color: #ccc; 
 }
 
 .cabecera {
