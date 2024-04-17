@@ -1,54 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-<head style="color: darkgreen;">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Huerto Orgánico</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos/estilo.css">
 </head>
-<body style="background-color: rgb(167, 226, 170);">
+<body style="background-color: rgb(136, 180, 136);">
+    <div class="contenedor">
+        <div class="menu">
+            <div class="menu-item">Inicio</div>
+            <div class="menu-item">Servicios</div>
+            <div class="menu-item">Nosotros</div>
+            <div class="menu-item">Contacto</div>
+        </div>
 
-    
+        <div class="cabecera">
+            <h1>Mi Huerto Orgánico</h1>
+        </div>
 
+        <div class="contenido">
+            <div class="productos">
+                <h2>Productos del Huerto Orgánico</h2>
+                <form action="procesar_formulario.php" method="POST">
+                    <label for="producto">Producto:</label>
+                    <select name="producto" id="producto">
+                        <option value="tomate">Tomate</option>
+                        <option value="cebolla">Cebolla</option>
+                        <option value="pimiento">Pimiento</option>
+                        <option value="paiteña">Paiteña</option>
+                        <option value="zanahoria">Zanahoria</option>
+                        <option value="alverja">Alverja</option>
+                        <option value="nabo">Nabo</option>
+                        <option value="pepinillo">Pepinillo</option>
+                        <option value="lechuga">Lechuga</option>
+                    </select>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" required>
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </div>
 
-<div class="menu">
-    <div class="logo">
-        <img href="logo.png" alt="Logo de la empresa">
-        
+            <div class="huerto">
+                <div class="fila-imagenes"></div> 
+                    <div class="imagen">
+                        <img src="img/tomate.webp" alt="tomate">
+                        <h2>Tomate</h2>
+                        <p>Delicioso tomate</p>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/cebolla.jpg" alt="cebolla">
+                        <h2>Cebolla</h2>
+                        <p>Paiteña deliciosa</p>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/Pimiento.jpeg" alt="pimiento">
+                        <h2>Pimiento</h2>
+                        <p>Delicioso pimiento</p>
+                    </div>
+                </div>
+                <div class="fila-imagenes">
+                    <div class="imagen">
+                        <img src="img/zanahoria.jpeg" alt="zanahoria">
+                        <h2>Zanahoria</h2>
+                        <p>Deliciosa zanahoria</p>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/alverja.avif" alt="alverja">
+                        <h2>Alverja</h2>
+                        <p>Deliciosa alverja</p>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/nabo.jpg" alt="nabo">
+                        <h2>Nabo</h2>
+                        <p>Delicioso nabo chino</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <ul class="lista">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
-        
-        
-    </ul>
-</div>
-
-
-<div class="formulario">
-    <h1>Productos del Huerto Orgánico</h1>
-    <link rel="stylesheet" href="estilos.css">
-    <form action="procesar_formulario.php" method="POST">
-        <label for="producto">Producto:</label>
-        <select name="producto" id="producto">
-            <option value="tomate">Tomate</option>
-            <option value="cebolla">Cebolla</option>
-            <option value="pimiento">Pimiento</option>
-            <option value="paiteña">Paiteña</option>
-            <option value="zanahoria">Zanahoria</option>
-            <option value="alverja">Alverja</option>
-            <option value="nabo">Nabo</option>
-            <option value="pepinillo">Pepinillo</option>
-            <option value="lechuga">Lechuga</option>
-        </select>
-        <label for="cantidad">Cantidad:</label>
-        <input type="number" id="cantidad" name="cantidad" min="1" required>
-        <button type="submit">Agregar al carrito</button>
-        <padding: 50px;></padding:>
-    </form>
-</div>
-
 </body>
 </html>
